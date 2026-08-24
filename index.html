@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>IMPULZI 26 | Technical Symposium</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       CONTINUOUS BACKGROUND VIDEO
+       ===================================================== -->
+
+  <video
+    class="background-video"
+    id="backgroundVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source
+      src="assets/background.mp4"
+      type="video/mp4"
+    >
+  </video>
+
+  <div class="video-overlay"></div>
+
+
+  <!-- =====================================================
+       CONTINUOUS AUDIO
+       ===================================================== -->
+
+  <audio
+    id="eventAudio"
+    preload="auto"
+    loop
+  >
+    <source
+      src="assets/event-audio.mpeg"
+      type="audio/mpeg"
+    >
+  </audio>
+
+
+  <!-- =====================================================
+       HAMBURGER BUTTON
+       ===================================================== -->
+
+  <button
+    class="menu-button"
+    id="menuButton"
+    type="button"
+    aria-label="Open menu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+
+  <!-- =====================================================
+       IEEE COMSOC LOGO
+       ===================================================== -->
+
+  <img
+    class="top-logo-image"
+    src="assets/ieee-comsoc-logo.png"
+    alt="IEEE ComSoc Kongu Engineering College"
+  >
+
+
+  <!-- =====================================================
+       INSTAGRAM BUTTON
+       ===================================================== -->
+
+  <a
+    class="instagram-button"
+    href="https://www.instagram.com/ieee_comsockec/?hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <rect
+        x="3"
+        y="3"
+        width="18"
+        height="18"
+        rx="5"
+      ></rect>
+
+      <circle
+        cx="12"
+        cy="12"
+        r="4.2"
+      ></circle>
+
+      <circle
+        cx="17.4"
+        cy="6.7"
+        r="1"
+      ></circle>
+
+    </svg>
+
+  </a>
+
+
+  <!-- =====================================================
+       SIDE MENU
+       ===================================================== -->
+
+  <aside
+    class="side-menu"
+    id="sideMenu"
+    aria-hidden="true"
+  >
+
+    <button
+      class="menu-close"
+      id="menuClose"
+      type="button"
+      aria-label="Close menu"
+    >
+      &times;
+    </button>
+
+    <nav class="menu-links">
+
+      <a
+        href="#home"
+        data-page="home"
+      >
+        HOME
+      </a>
+
+      <a
+        href="#events"
+        data-page="events"
+      >
+        EVENTS
+      </a>
+
+
+      <a
+        href="#contact"
+        data-page="contact"
+      >
+        TEAM
+      </a>
+
+    </nav>
+
+  </aside>
+
+  <div
+    class="menu-backdrop"
+    id="menuBackdrop"
+  ></div>
+
+
+  <!-- =====================================================
+       MAIN APPLICATION
+       ===================================================== -->
+
+  <main class="page-container">
+
+
+    <!-- ===================================================
+         HOME PAGE
+         =================================================== -->
+
+    <section
+      class="page-section active-page"
+      id="home"
+    >
+
+      <div class="home-content">
+
+        <img
+          class="impulzi-logo"
+          src="assets/impulzi-logo.png"
+          alt="IMPULZI 26"
+        >
+
+        <div class="event-date">
+          SEPTEMBER 21<sup>ST</sup>, 2026
+        </div>
+
+
+        <div class="hero-buttons">
+
+          <!-- REGISTER -->
+          <a
+            href="#events"
+            data-page="events"
+            class="hero-button"
+          >
+            REGISTER
+          </a>
+
+
+          <!-- BROCHURE -->
+          <button
+            class="hero-button"
+            id="openBrochure"
+            type="button"
+          >
+            BROCHURE
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         EVENTS MAIN PAGE
+         =================================================== -->
+
+    <section
+      class="page-section"
+      id="events"
+    >
+
+      <div class="events-page">
+
+        <h1 class="events-title">
+          THE TECHNICAL SYMPOSIUM
+        </h1>
+
+
+        <!-- EVENT CATEGORY CARDS -->
+
+        <div class="category-grid">
+
+
+          <!-- TECHNICAL -->
+
+          <article
+            class="category-card"
+            id="technicalCategory"
+          >
+
+            <div class="category-image-wrap">
+
+              <img
+                src="assets/technical.png"
+                alt="Technical Events"
+              >
+
+            </div>
+
+            <div class="category-info">
+
+              <h2>
+                TECHNICAL
+              </h2>
+
+              <button
+                class="know-button"
+                id="technicalButton"
+                type="button"
+              >
+                TO KNOW
+              </button>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- NON TECHNICAL -->
+
+          <article
+            class="category-card"
+            id="nonTechnicalCategory"
+          >
+
+            <div class="category-image-wrap">
+
+              <img
+                src="assets/non-technical.png"
+                alt="Non Technical Events"
+              >
+
+            </div>
+
+            <div class="category-info">
+
+              <h2>
+                NON-TECHNICAL
+              </h2>
+
+              <button
+                class="know-button"
+                id="nonTechnicalButton"
+                type="button"
+              >
+                TO KNOW
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- =================================================
+             ONLY REGISTER BUTTON ON EVENTS PAGE
+             ================================================= -->
+
+        <div class="events-register">
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc9y2AyKTz6LAbT9RtHPlUg9fpZP5rYzdr2JhQIgGqkPk_9TQ/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="events-register-button"
+          >
+            REGISTER
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         TECHNICAL EVENTS PAGE
+         =================================================== -->
+
+    <section
+      class="page-section"
+      id="technicalEvents"
+    >
+
+      <div class="events-page">
+
+        <h1 class="events-title">
+          TECHNICAL EVENTS
+        </h1>
+
+
+        <div class="event-detail-grid">
+
+
+          <!-- PAPER PRESENTATION -->
+
+          <article
+            class="flip-card"
+            tabindex="0"
+          >
+
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+
+                <div class="detail-image-wrap">
+
+                  <img
+                    src="assets/paper-presentation.jpg"
+                    alt="Paper Presentation"
+                  >
+
+                </div>
+
+                <div class="detail-title">
+                  PAPER PRESENTATION
+                </div>
+
+              </div>
+
+
+              <div class="flip-card-back">
+
+                <h2>
+                  PAPER PRESENTATION
+                </h2>
+
+                <p>
+                  Teams: 1–3 members.
+                </p>
+
+                <p>
+                  Present a research or technical paper.
+                </p>
+
+                <p>
+                  Explain the topic clearly and confidently.
+                </p>
+
+                <p>
+                  Judges evaluate knowledge and presentation.
+                </p>
+
+                <p>
+                  Focuses on research and communication skills.
+                </p>
+
+                <p>
+                  Best presentation wins.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT PRESENTATION -->
+
+          <article
+            class="flip-card"
+            tabindex="0"
+          >
+
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+
+                <div class="detail-image-wrap">
+
+                  <img
+                    src="assets/project-presentation.jpg"
+                    alt="Project Presentation"
+                  >
+
+                </div>
+
+                <div class="detail-title">
+                  PROJECT PRESENTATION
+                </div>
+
+              </div>
+
+
+              <div class="flip-card-back">
+
+                <h2>
+                  PROJECT PRESENTATION
+                </h2>
+
+                <p>
+                  Teams: 1–3 members.
+                </p>
+
+                <p>
+                  Present Software or Hardware projects.
+                </p>
+
+                <p>
+                  Projects are evaluated by a panel.
+                </p>
+
+                <p>
+                  Tests innovation and technical knowledge.
+                </p>
+
+                <p>
+                  Presentation and explanation skills are assessed.
+                </p>
+
+                <p>
+                  Best project wins.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- SEEK & SCAN -->
+
+          <article
+            class="flip-card"
+            tabindex="0"
+          >
+
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+
+                <div class="detail-image-wrap">
+
+                  <img
+                    src="assets/seek-scan.jpg"
+                    alt="Seek and Scan"
+                  >
+
+                </div>
+
+                <div class="detail-title">
+                  SEEK &amp; SCAN
+                </div>
+
+              </div>
+
+
+              <div class="flip-card-back">
+
+                <h2>
+                  SEEK &amp; SCAN
+                </h2>
+
+                <p>
+                  Teams scan unique QR codes.
+                </p>
+
+                <p>
+                  Each QR contains 5 questions.
+                </p>
+
+                <p>
+                  Solving them gives a clue to the next QR where placed.
+                </p>
+
+                <p>
+                  Teams enter a code to unlock the next round.
+                </p>
+
+                <p>
+                  The challenge has 3 rounds.
+                </p>
+
+                <p>
+                  Fastest team on the leaderboard wins.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- CODING RELAY -->
+
+          <article
+            class="flip-card"
+            tabindex="0"
+          >
+
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+
+                <div class="detail-image-wrap">
+
+                  <img
+                    src="assets/coding-relay.jpg"
+                    alt="Coding Relay"
+                  >
+
+                </div>
+
+                <div class="detail-title">
+                  CODING RELAY
+                </div>
+
+              </div>
+
+
+              <div class="flip-card-back">
+
+                <h2>
+                  CODING RELAY
+                </h2>
+
+                <p>
+                  Teams: 1–3 members.
+                </p>
+
+                <p>
+                  Three levels: Easy, Medium, and Hard.
+                </p>
+
+                <p>
+                  Easy: 1 member solves.
+                </p>
+
+                <p>
+                  Medium: 2 members solve.
+                </p>
+
+                <p>
+                  Hard: 3 members solve.
+                </p>
+
+                <p>
+                  Fastest team on the leaderboard wins.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+        <!-- BACK TO EVENTS BUTTON -->
+        <div class="back-to-events-wrapper">
+          <button
+            class="back-to-events-button"
+            id="backToEventsTechnical"
+            type="button"
+          >
+            BACK TO EVENTS
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         NON TECHNICAL EVENTS PAGE
+         =================================================== -->
+
+    <section
+      class="page-section"
+      id="nonTechnicalEvents"
+    >
+
+      <div class="events-page">
+
+        <h1 class="events-title">
+          NON-TECHNICAL EVENTS
+        </h1>
+
+
+        <div class="event-detail-grid">
+
+
+          <!-- PICK THE PICTURE -->
+
+          <article
+            class="flip-card"
+            tabindex="0"
+          >
+
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+
+                <div class="detail-image-wrap">
+
+                  <img
+                    src="assets/pick-the-picture.jpg"
+                    alt="Pick the Picture"
+                  >
+
+                </div>
+
+                <div class="detail-title">
+                  PICK THE PICTURE
+                </div>
+
+              </div>
+
+
+              <div class="flip-card-back">
+
+                <h2>
+                  PICK THE PICTURE
+                </h2>
+
+                <p>
+                  Pictures from movies and songs are displayed.
+                </p>
+
+                <p>
+                  Teams identify the picture or related content.
+                </p>
+
+                <p>
+                  Some challenges involve singing or performing.
+                </p>
+
+                <p>
+                  Tests memory and entertainment knowledge.
+                </p>
+
+                <p>
+                  Quick and accurate answers earn points.
+                </p>
+
+                <p>
+                  Highest-scoring team wins.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ACTION ECHO -->
+
+          <article
+            class="flip-card"
+            tabindex="0"
+          >
+
+            <div class="flip-card-inner">
+
+              <div class="flip-card-front">
+
+                <div class="detail-image-wrap">
+
+                  <img
+                    src="assets/action-echo.jpeg"
+                    alt="Action Echo"
+                  >
+
+                </div>
+
+                <div class="detail-title">
+                  ACTION ECHO
+                </div>
+
+              </div>
+
+
+              <div class="flip-card-back">
+
+                <h2>
+                  ACTION ECHO
+                </h2>
+
+                <p>
+                  One member from each team forms a line.
+                </p>
+
+                <p>
+                  An action is shown to the last person.
+                </p>
+
+                <p>
+                  The action is passed from person to person.
+                </p>
+
+                <p>
+                  Each participant must memorize and repeat it.
+                </p>
+
+                <p>
+                  The first person performs the final action.
+                </p>
+
+                <p>
+                  Most accurate team wins.
+                </p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+        <!-- BACK TO EVENTS BUTTON -->
+        <div class="back-to-events-wrapper">
+          <button
+            class="back-to-events-button"
+            id="backToEventsNonTechnical"
+            type="button"
+          >
+            BACK TO EVENTS
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCHEDULE PAGE
+         =================================================== -->
+
+    <section
+      class="page-section"
+      id="schedule"
+    >
+
+      <div class="simple-page">
+
+        <h1 class="events-title">
+          SYMPOSIUM SCHEDULE
+        </h1>
+
+        <div class="coming-soon">
+          SCHEDULE WILL BE UPDATED SOON
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+ <!-- =====================================================
+     CONTACT PAGE
+     ===================================================== -->
+
+<section
+  class="page-section"
+  id="contact"
+>
+
+  <div class="contact-page">
+
+    <h1 class="contact-title">
+      TEAM COMSOC
+    </h1>
+
+
+    <!-- =================================================
+         FACULTY ADVISOR
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>FACULTY ADVISOR</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/THIRUNAVUKKARASU.webp"
+            alt="Mr. G. Thirunavukkarasu"
+          >
+
+          <h3>
+            Mr. G. THIRUNAVUKKARASU
+          </h3>
+
+          <p>
+            FACULTY ADVISOR
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         CHAIRMAN
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>CHAIRMAN</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img class = "adi"
+            src="assets/ADITHYAN.jpeg"
+            alt="S.K. Adithyan"
+          >
+
+          <h3>
+            S.K. ADITHYAN
+          </h3>
+
+          <p>
+            CHAIRMAN
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         SECRETARY
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>SECRETARY</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/AKASH.jpeg"
+            alt="V. Akash"
+          >
+
+          <h3>
+            V. AKASH
+          </h3>
+
+          <p>
+            SECRETARY
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         TREASURER
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>TREASURER</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/PAVITHRA.jpeg"
+            alt="S. Pavithra"
+          >
+
+          <h3>
+            S. PAVITHRA
+          </h3>
+
+          <p>
+            TREASURER
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         VICE CHAIRMAN
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>VICE - CHAIRMAN</h2>
+
+      <div class="contact-grid two-cards">
+
+        <div class="contact-card">
+
+          <img 
+            src="assets/ADHILAKSHMI.jpeg"
+            alt="S. Adhilakshmi"
+          >
+
+          <h3>
+            S. ADHILAKSHMI
+          </h3>
+
+          <p>
+            VICE - CHAIRMAN
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img class="vijay"
+            src="assets/VIJAYVARMA.jpeg"
+            alt="S. Vijay Varma"
+          >
+
+          <h3>
+            S. VIJAY VARMA
+          </h3>
+
+          <p>
+            VICE - CHAIRMAN
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         JOINT SECRETARY
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>JOINT SECRETARY</h2>
+
+      <div class="contact-grid three-cards">
+
+        <div class="contact-card">
+
+          <img class="guna"
+            src="assets/GUNACHANDRU.jpeg"
+            alt="T. Gunachandru"
+          >
+
+          <h3>
+            T. GUNACHANDRU
+          </h3>
+
+          <p>
+            JOINT SECRETARY
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/SATHYASHRI.jpeg"
+            alt="S. Sathyashri"
+          >
+
+          <h3>
+            S. SATHYASHRI
+          </h3>
+
+          <p>
+            JOINT SECRETARY
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/DHANASHREE.jpeg"
+            alt="D. Dhanashree"
+          >
+
+          <h3>
+            D. DHANASHREE
+          </h3>
+
+          <p>
+            JOINT SECRETARY
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         ADDL. SECRETARY
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>ADDL. SECRETARY</h2>
+
+      <div class="contact-grid three-cards">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/SANJITHA.jpeg"
+            alt="R. Sanjitha"
+          >
+
+          <h3>
+            R. SANJITHA
+          </h3>
+
+          <p>
+            ADDL. SECRETARY
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/POOVIGA.jpeg"
+            alt="N. Pooviga"
+          >
+
+          <h3>
+            N. POOVIGA
+          </h3>
+
+          <p>
+            ADDL. SECRETARY
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img class = "mano"
+            src="assets/MANOJ.jpeg"
+            alt="V. Manoj"
+          >
+
+          <h3>
+            V. MANOJ
+          </h3>
+
+          <p>
+            ADDL. SECRETARY
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         JOINT TREASURER
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>JOINT TREASURER</h2>
+
+      <div class="contact-grid two-cards">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/SAHANAVARSHINI.jpeg"
+            alt="S.S. Sahana Varshini"
+          >
+
+          <h3>
+            S.S. SAHANA VARSHINI
+          </h3>
+
+          <p>
+            JOINT TREASURER
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/MITHRA.jpeg"
+            alt="T. Mithra"
+          >
+
+          <h3>
+            T. MITHRA
+          </h3>
+
+          <p>
+            JOINT TREASURER
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         OPS. COORDINATOR
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>OPS. COORDINATOR</h2>
+
+      <div class="contact-grid two-cards">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/SAMPATHKUMAR.jpeg"
+            alt="S. Sampath Kumar"
+          >
+
+          <h3>
+            S. SAMPATH KUMAR
+          </h3>
+
+          <p>
+            OPS. COORDINATOR
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img class="pradeep"
+            src="assets/PRADEEP.jpeg"
+            alt="S. Pradeep"
+          >
+
+          <h3>
+            S. PRADEEP
+          </h3>
+
+          <p>
+            OPS. COORDINATOR
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         PUBLICATION CHAIR
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>PUBLICATION CHAIR</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/ISHANTHINI.jpeg"
+            alt="R. Ishanthini"
+          >
+
+          <h3>
+            R. ISHANTHINI
+          </h3>
+
+          <p>
+            PUBLICATION CHAIR
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         DESIGN COORDINATOR
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>DESIGN COORDINATOR</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/RAJANANDHINI.jpeg"
+            alt="P. Rajanandhini"
+          >
+
+          <h3>
+            P. RAJANANDHINI
+          </h3>
+
+          <p>
+            DESIGN COORDINATOR
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         CONTENT COORDINATOR
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>CONTENT COORDINATOR</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/SARVIKA.jpeg"
+            alt="S. Sarvika"
+          >
+
+          <h3>
+            S. SARVIKA
+          </h3>
+
+          <p>
+            CONTENT COORDINATOR
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         DOCUMENTATION LEAD
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>DOCUMENTATION LEAD</h2>
+
+      <div class="contact-grid two-cards">
+
+        <div class="contact-card">
+        <div class = "dhanesh_frame">
+          <img class = "dhanesh"
+            src="assets/DHANESHWARAN.jpeg"
+            alt="S. Dhaneshwaran"
+          >
+          </div>
+          <h3>
+            S. DHANESHWARAN
+          </h3>
+
+          <p>
+            DOCUMENTATION LEAD
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img class = " sudha"
+            src="assets/SUDHAKARAN.jpeg"
+            alt="S. Sudhakaran"
+          >
+
+          <h3>
+            S. SUDHAKARAN
+          </h3>
+
+          <p>
+            DOCUMENTATION LEAD
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         PUBLICITY CHAIR
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>PUBLICITY CHAIR</h2>
+
+      <div class="contact-grid three-cards">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/SUTHARSHAN.jpeg"
+            alt="T. Sutharshan"
+          >
+
+          <h3>
+            T. SUTHARSHAN
+          </h3>
+
+          <p>
+            PUBLICITY CHAIR
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/THARANITHARAN.jpeg"
+            alt="K.S. Tharani Tharan"
+          >
+
+          <h3>
+            K.S. THARANI THARAN
+          </h3>
+
+          <p>
+            PUBLICITY CHAIR
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/SELVAKUMARI.jpeg"
+            alt="M. Selvakkumari"
+          >
+
+          <h3>
+            M. SELVAKUMARI
+          </h3>
+
+          <p>
+            PUBLICITY CHAIR
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         VTOOLS COORDINATOR
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>VTOOLS COORDINATOR</h2>
+
+      <div class="contact-grid three-cards">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/LAKSHITHA.jpeg"
+            alt="K.K. Lakshitha"
+          >
+
+          <h3>
+            K.K. LAKSHITHA
+          </h3>
+
+          <p>
+            VTOOLS COORDINATOR
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/BAVADHARINI.jpeg"
+            alt="S. Bavadharini"
+          >
+
+          <h3>
+            S. BAVADHARINI
+          </h3>
+
+          <p>
+            VTOOLS COORDINATOR
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/GOKUL.jpeg"
+            alt="V. Gokul"
+          >
+
+          <h3>
+            V. GOKUL
+          </h3>
+
+          <p>
+            VTOOLS COORDINATOR
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         WEBMASTER
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>WEBMASTER</h2>
+
+      <div class="contact-grid three-cards">
+
+        <div class="contact-card">
+
+          <img
+            src="assets/JERISHIMMANUEL.jpeg"
+            alt="J. Jerish Immanuel"
+          >
+
+          <h3>
+            J.JERISH IMMANUEL
+          </h3>
+
+          <p>
+            WEBMASTER
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/KALPITHAASHREE.jpeg"
+            alt="E. Kalpithaa Shree"
+          >
+
+          <h3>
+            E. KALPITHAA SHREE
+          </h3>
+
+          <p>
+            WEBMASTER
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img
+            src="assets/DHARANI.jpeg"
+            alt="T. Dharani"
+          >
+
+          <h3>
+            T. DHARANI
+          </h3>
+
+          <p>
+            WEBMASTER
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         MEMBERSHIP LEAD
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>MEMBERSHIP LEAD</h2>
+
+      <div class="contact-grid two-cards">
+
+        <div class="contact-card">
+
+          <img class = "varun"
+            src="assets/VARUN.jpeg"
+            alt="C. Varun"
+          >
+
+          <h3>
+            C. VARUN
+          </h3>
+
+          <p>
+            MEMBERSHIP LEAD
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <img class="sriram"
+            src="assets/SRIRAMKANNAN.jpeg"
+            alt="S. Sriramkannan"
+          >
+
+          <h3>
+            S. SRIRAMKANNAN
+          </h3>
+
+          <p>
+            MEMBERSHIP LEAD
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         FORUM MANAGER
+         ================================================= -->
+
+    <div class="contact-group">
+
+      <h2>FORUM MANAGER</h2>
+
+      <div class="contact-grid one-card">
+
+        <div class="contact-card">
+
+          <img class="jayan"
+            src="assets/JAYANIVASH.jpeg"
+            alt="Jayanivash B"
+          >
+
+          <h3>
+            JAYANIVASH.B
+          </h3>
+
+          <p>
+            FORUM MANAGER
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       ANNOUNCEMENT POPUP
+       ===================================================== -->
+
+  <div
+    class="announcement-modal"
+    id="announcementModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="announcement-backdrop"
+      id="announcementBackdrop"
+    ></div>
+
+
+    <div
+      class="announcement-card"
+      role="dialog"
+      aria-modal="true"
+    >
+
+      <button
+        class="announcement-close"
+        id="announcementClose"
+        type="button"
+        aria-label="Close announcement"
+      >
+        &times;
+      </button>
+
+
+      <div class="announcement-heading">
+
+        <span class="announcement-icon">
+          ◇
+        </span>
+
+        <span>
+          ANNOUNCEMENT
+        </span>
+
+      </div>
+
+
+      <div class="announcement-line"></div>
+
+
+      <div class="announcement-content">
+
+        <p>
+          <strong>MAX TEAM SIZE :</strong>
+          1 - 3
+        </p>
+
+        <p>
+          <strong>PER HEAD :</strong>
+          ₹ 99
+        </p>
+
+        <p>
+          <strong>FOR TECHNICAL :</strong>
+          YOU CAN PARTICIPATE IN ANY 2 EVENTS
+        </p>
+
+        <p>
+          <strong>FOR NON-TECHNICAL :</strong>
+          YOU CAN PARTICIPATE IN ANY 1 EVENT
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       BROCHURE POPUP
+       ===================================================== -->
+
+  <div
+    class="brochure-modal"
+    id="brochureModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="brochure-backdrop"
+      id="brochureBackdrop"
+    ></div>
+
+
+    <div class="brochure-card">
+
+      <button
+        class="close-button"
+        id="closeBrochure"
+        type="button"
+        aria-label="Close brochure"
+      >
+        &times;
+      </button>
+
+      <img
+        src="assets/brochure.png"
+        alt="IMPULZI 26 Brochure"
+      >
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script>
+
+    /* =====================================================
+       ELEMENTS
+       ===================================================== */
+
+    const menuButton =
+      document.getElementById("menuButton");
+
+    const menuClose =
+      document.getElementById("menuClose");
+
+    const sideMenu =
+      document.getElementById("sideMenu");
+
+    const menuBackdrop =
+      document.getElementById("menuBackdrop");
+
+
+    const eventAudio =
+      document.getElementById("eventAudio");
+
+
+
+    /* =====================================================
+       AUDIO
+       ===================================================== */
+
+    let audioStarted = false;
+
+
+    function startAudio() {
+
+      if (audioStarted) {
+        return;
+      }
+
+      eventAudio.volume = 1;
+
+      eventAudio.play()
+        .then(() => {
+
+          audioStarted = true;
+
+        })
+        .catch(() => {
+
+          /*
+             Browser blocked autoplay.
+             It will try again on next interaction.
+          */
+
+        });
+
+    }
+
+
+    document.addEventListener(
+      "click",
+      startAudio,
+      { once: false }
+    );
+
+    document.addEventListener(
+      "touchstart",
+      startAudio,
+      { once: false }
+    );
+
+    document.addEventListener(
+      "keydown",
+      startAudio,
+      { once: false }
+    );
+
+
+
+    /* =====================================================
+       MENU
+       ===================================================== */
+
+    function openMenu() {
+
+      sideMenu.classList.add("show");
+
+      menuBackdrop.classList.add("show");
+
+      sideMenu.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+    }
+
+
+    function closeMenu() {
+
+      sideMenu.classList.remove("show");
+
+      menuBackdrop.classList.remove("show");
+
+      sideMenu.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+    }
+
+
+    menuButton.addEventListener(
+      "click",
+      openMenu
+    );
+
+
+    menuClose.addEventListener(
+      "click",
+      closeMenu
+    );
+
+
+    menuBackdrop.addEventListener(
+      "click",
+      closeMenu
+    );
+
+
+
+    /* =====================================================
+       PAGE NAVIGATION
+       ===================================================== */
+
+    const pageSections =
+      document.querySelectorAll(".page-section");
+
+
+    function showPage(pageId) {
+
+      pageSections.forEach(
+        page => {
+
+          page.classList.remove(
+            "active-page"
+          );
+
+        }
+      );
+
+
+      const target =
+        document.getElementById(pageId);
+
+
+      if (target) {
+
+        target.classList.add(
+          "active-page"
+        );
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+
+      }
+
+
+      closeMenu();
+
+    }
+
+
+
+    /* =====================================================
+       MENU LINKS
+       ===================================================== */
+
+    document
+      .querySelectorAll("[data-page]")
+      .forEach(link => {
+
+        link.addEventListener(
+          "click",
+          function(event) {
+
+            event.preventDefault();
+
+            const page =
+              this.getAttribute(
+                "data-page"
+              );
+
+            showPage(page);
+            if (page === "events") {
+    setTimeout(() => {
+        openAnnouncement();
+    }, 150);
+}
+
+          }
+        );
+
+      });
+
+
+
+    /* =====================================================
+       TECHNICAL BUTTON
+       ===================================================== */
+
+    const technicalButton =
+      document.getElementById(
+        "technicalButton"
+      );
+
+
+    technicalButton.addEventListener(
+      "click",
+      function(event) {
+
+        event.stopPropagation();
+
+        closeAnnouncement();
+
+        showPage(
+          "technicalEvents"
+        );
+
+      }
+    );
+
+
+
+    /* =====================================================
+       NON TECHNICAL BUTTON
+       ===================================================== */
+
+    const nonTechnicalButton =
+      document.getElementById(
+        "nonTechnicalButton"
+      );
+
+
+    nonTechnicalButton.addEventListener(
+      "click",
+      function(event) {
+
+        event.stopPropagation();
+
+        closeAnnouncement();
+
+        showPage(
+          "nonTechnicalEvents"
+        );
+
+      }
+    );
+
+
+
+    /* =====================================================
+       CATEGORY CARD CLICK
+       ===================================================== */
+
+    document
+      .getElementById(
+        "technicalCategory"
+      )
+      .addEventListener(
+        "click",
+        function() {
+
+          showPage(
+            "technicalEvents"
+          );
+
+        }
+      );
+
+
+    document
+      .getElementById(
+        "nonTechnicalCategory"
+      )
+      .addEventListener(
+        "click",
+        function() {
+
+          showPage(
+            "nonTechnicalEvents"
+          );
+
+        }
+      );
+
+
+
+    /* =====================================================
+       ANNOUNCEMENT
+       ===================================================== */
+
+    const announcementModal =
+      document.getElementById(
+        "announcementModal"
+      );
+
+    const announcementClose =
+      document.getElementById(
+        "announcementClose"
+      );
+
+    const announcementBackdrop =
+      document.getElementById(
+        "announcementBackdrop"
+      );
+
+
+    function openAnnouncement() {
+
+      announcementModal.classList.add(
+        "show"
+      );
+
+      announcementModal.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+    }
+
+
+    function closeAnnouncement() {
+
+      announcementModal.classList.remove(
+        "show"
+      );
+
+      announcementModal.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+    }
+
+
+    announcementClose.addEventListener(
+      "click",
+      closeAnnouncement
+    );
+
+
+    announcementBackdrop.addEventListener(
+      "click",
+      closeAnnouncement
+    );
+
+
+
+    /* =====================================================
+       OPEN ANNOUNCEMENT WHEN EVENTS PAGE OPENS
+       ===================================================== */
+
+    function openEventsPage() {
+
+      showPage("events");
+
+      setTimeout(
+        openAnnouncement,
+        300
+      );
+
+    }
+
+
+
+    /* =====================================================
+       HASH NAVIGATION
+       ===================================================== */
+
+    function handleHash() {
+
+      const hash =
+        window.location.hash
+          .replace("#", "");
+
+
+      if (hash === "events") {
+
+        openEventsPage();
+
+      }
+      else if (hash === "schedule") {
+
+        showPage("schedule");
+
+      }
+      else if (hash === "contact") {
+
+        showPage("contact");
+
+      }
+      else {
+
+        showPage("home");
+
+      }
+
+    }
+
+
+    window.addEventListener(
+      "hashchange",
+      handleHash
+    );
+
+
+
+    /* =====================================================
+       BROCHURE
+       ===================================================== */
+
+    const brochureModal =
+      document.getElementById(
+        "brochureModal"
+      );
+
+    const openBrochure =
+      document.getElementById(
+        "openBrochure"
+      );
+
+    const closeBrochure =
+      document.getElementById(
+        "closeBrochure"
+      );
+
+    const brochureBackdrop =
+      document.getElementById(
+        "brochureBackdrop"
+      );
+
+
+    function openBrochureModal() {
+
+      brochureModal.classList.add(
+        "show"
+      );
+
+      brochureModal.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+    }
+
+
+    function closeBrochureModal() {
+
+      brochureModal.classList.remove(
+        "show"
+      );
+
+      brochureModal.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+    }
+
+
+    openBrochure.addEventListener(
+      "click",
+      openBrochureModal
+    );
+
+
+    closeBrochure.addEventListener(
+      "click",
+      closeBrochureModal
+    );
+
+
+    brochureBackdrop.addEventListener(
+      "click",
+      closeBrochureModal
+    );
+
+
+
+    /* =====================================================
+       BROCHURE AUTOMATICALLY OPENS ON HOME PAGE
+       ===================================================== */
+
+    window.addEventListener(
+      "load",
+      function() {
+
+        showPage("home");
+
+        setTimeout(
+          openBrochureModal,
+          500
+        );
+
+      }
+    );
+
+
+
+    /* =====================================================
+       FLIP EVENT CARDS
+       ===================================================== */
+
+    document
+      .querySelectorAll(".flip-card")
+      .forEach(card => {
+
+        card.addEventListener(
+          "click",
+          function() {
+
+            /*
+               Only the clicked card turns.
+               Other cards stay as they are.
+            */
+
+            this.classList.toggle(
+              "flipped"
+            );
+
+          }
+        );
+
+
+        card.addEventListener(
+          "keydown",
+          function(event) {
+
+            if (
+              event.key === "Enter" ||
+              event.key === " "
+            ) {
+
+              event.preventDefault();
+
+              this.classList.toggle(
+                "flipped"
+              );
+
+            }
+
+          }
+        );
+
+      });
+
+
+
+    /* =====================================================
+       ESCAPE KEY
+       ===================================================== */
+
+    document.addEventListener(
+      "keydown",
+      function(event) {
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          closeAnnouncement();
+
+          closeBrochureModal();
+
+          closeMenu();
+
+        }
+
+      }
+    );
+    /* =====================================================
+   BACK TO EVENTS BUTTONS
+   ===================================================== */
+
+const backToEventsTechnical =
+  document.getElementById(
+    "backToEventsTechnical"
+  );
+
+const backToEventsNonTechnical =
+  document.getElementById(
+    "backToEventsNonTechnical"
+  );
+
+
+/* TECHNICAL → EVENTS */
+
+if (backToEventsTechnical) {
+
+  backToEventsTechnical.addEventListener(
+    "click",
+    function() {
+
+      showPage("events");
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+  );
+
+}
+
+
+/* NON-TECHNICAL → EVENTS */
+
+if (backToEventsNonTechnical) {
+
+  backToEventsNonTechnical.addEventListener(
+    "click",
+    function() {
+
+      showPage("events");
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+  );
+
+}
+
+  </script>
+
+</body>
+</html>
